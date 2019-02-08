@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="sd.css">
+</head>
+<body>
+
+  <div  container="fluid">
+      <h1>MINI CALCULATOR</h1>
+<p></p>
+<input type="number" id="inpo">
+<p id="1"></p>
+<input type="number" id="inpo1">
+<br/>
+<br/>
+<button id="bt" onclick = "document.getElementById('h').value=add(we(),we1())" >ADD</button>
+<button  id="bt" onclick = "document.getElementById('h').value=sub(we(),we1())" >SUBTRACT</button><br/>
+<button id="bt" onclick = "document.getElementById('h').value=mul(we(),we1())" >MULTIPLY</button>
+<button  id="bt" onclick = "document.getElementById('h').value=div(we(),we1())" >DIVIDE</button><br/>
+<button  id="bt" onclick = clr() >CLR</button>
+<script>
+function we() {
+var c = document.getElementById("inpo").value;
+return parseInt(c);
+}
+function we1() {
+var c1 = document.getElementById("inpo1").value;
+return parseInt(c1);
+}
+function sub(p, q)
+{
+  return p-q;
+}
+function add(p,q)
+{
+return p+q;
+}
+function mul(p, q)
+{
+  return p*q;
+}
+function div(p,q)
+{
+  return p/q;
+}
+function clr()
+{
+  document.getElementById('inpo').value = '';
+  document.getElementById('inpo1').value = '';
+  document.getElementById('h').value = '';
+}
+</script>
+<p>
+ = <input id="h"></p>
+</div>
+</body>
+</html>

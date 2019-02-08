@@ -1,0 +1,53 @@
+div{
+  background:grey;
+  width:18%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  align-content: center;
+  margin-left: 780px;
+  margin-top: 100px;
+}
+body
+{
+background: white;
+}
+p{
+color:white;
+font-size: 25px;
+font-family: serif;
+font-weight: bold;
+font-stretch: condensed;
+}
+#bt
+{
+  color:white;
+}
+h1
+{
+  margin-left: 10px;
+  color:white;
+
+
+}
+#inpo1{
+background:#ffffff;
+height: 22px;
+}
+#inpo{
+  background:#ffffff;
+  height: 22px;
+}
+#h{
+  background:#ffffff;
+  size:20px;
+}
+#bt
+{
+  border-radius: 4px;
+  height:32px;
+  box-shadow: .5px 0.5px 0px 1.5px;
+color:black;
+}
