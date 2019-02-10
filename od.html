@@ -12,9 +12,9 @@
   <div  container="fluid">
       <h1>MINI CALCULATOR</h1>
 <p></p>
-<input type="number" id="inpo">
+<input type="text" id="inpo">
 <p id="1"></p>
-<input type="number" id="inpo1">
+<input type="text" id="inpo1">
 <br/>
 <br/>
 <button id="bt" onclick = "document.getElementById('h').value=add(we(),we1())" >ADD</button>
@@ -22,14 +22,15 @@
 <button id="bt" onclick = "document.getElementById('h').value=mul(we(),we1())" >MULTIPLY</button>
 <button  id="bt" onclick = "document.getElementById('h').value=div(we(),we1())" >DIVIDE</button><br/>
 <button  id="bt" onclick = clr() >CLR</button>
+
 <script>
 function we() {
 var c = document.getElementById("inpo").value;
-return parseInt(c);
+return parseFloat(c);
 }
 function we1() {
 var c1 = document.getElementById("inpo1").value;
-return parseInt(c1);
+return parseFloat(c1);
 }
 function sub(p, q)
 {
@@ -53,9 +54,15 @@ function clr()
   document.getElementById('inpo1').value = '';
   document.getElementById('h').value = '';
 }
+ function voice()
+{
+  var audio =   document.getElementById("audio");
+  audio.play();
+}
 </script>
 <p>
  = <input id="h"></p>
 </div>
+<audio src="https://gaana.com/song/bom-diggy-diggy">
 </body>
 </html>
